@@ -1,0 +1,23 @@
+*.class
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+
+mas_models/mas_model_code/.idea/
+mas_models/mas_model_code/target/
+mas_models/mas_model_code/mas-atclib/target/
+mas_models/mas_model_code/mas-brahms/target/
+mas_models/mas_model_code/mas-atm-concepts/target/
+mas_models/mas_model_code/mas-data/target/
+mas_models/mas_model_code/mas-hmi/target/
+mas_models/mas_model_code/mas-model-gen/target/
+mas_models/mas_model_code/mas-sim-conf/target/
+mas_models/mas_model_code/project/project/
