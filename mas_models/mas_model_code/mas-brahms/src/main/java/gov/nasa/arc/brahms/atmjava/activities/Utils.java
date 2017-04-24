@@ -2,13 +2,13 @@
 Copyright © 2016, United States Government, as represented
 by the Administrator of the National Aeronautics and Space
 Administration. All rights reserved.
- 
+
 The MAV - Modeling, analysis and visualization of ATM concepts
 platform is licensed under the Apache License, Version 2.0
 (the "License"); you may not use this file except in
 compliance with the License. You may obtain a copy of the
-License at http://www.apache.org/licenses/LICENSE-2.0. 
- 
+License at http://www.apache.org/licenses/LICENSE-2.0.
+
 Unless required by applicable law or agreed to in writing,
 software distributed under the License is distributed on an
 "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
@@ -339,7 +339,7 @@ public class Utils {
 
 
             return afoImpl;
-        } catch (ExternalException e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
         return null;
@@ -447,7 +447,7 @@ public class Utils {
 
             // is_Metering is _not_ synchronized (only used for planes and not controllers)
 
-        } catch (ExternalException e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }
@@ -547,7 +547,7 @@ public class Utils {
                     initialParams);
 
             return afoImpl;
-        } catch (ExternalException e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
         return null;
@@ -620,7 +620,7 @@ public class Utils {
             double dEndAltitude = flightSeg.getBeliefAttributeDouble(flightSeg, "end_altitude", ctx);
             double iEndSpeed = (int) flightSeg.getBeliefAttributeDouble(flightSeg, "end_speed", ctx);
             return new FlightSegment(flightSegName, afoName, fromWaypoint, toWaypoint, dEndAltitude, iEndSpeed);
-        } catch (ExternalException e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
         return null;
@@ -711,7 +711,7 @@ public class Utils {
                 }
                 return someTimeLine;
             }
-        } catch (ExternalException e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
         return null;
@@ -760,7 +760,7 @@ public class Utils {
             afoObject.setAirSpeed(mIAirSpeed);
             afoObject.setController(controller);
             afoObject.setMetering(isMetering);
-        } catch (ExternalException e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }

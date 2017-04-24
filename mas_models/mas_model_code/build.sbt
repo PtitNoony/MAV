@@ -138,9 +138,9 @@ lazy val brahms = createProject("mas-brahms").dependsOn(atmConcepts % "test->tes
   commonSettings,
   //unmanagedBase := baseDirectory.value / "../lib",
   unmanagedJars in Compile += Attributed.blank(javaFxLib),
+  libraryDependencies += "log4j" % "log4j" % "1.2.17",
   libraryDependencies += "junit" % "junit" % jUnitVersion
 )
-
 
 lazy val hmi = createProject("mas-hmi").dependsOn(brahms % "test->test;compile->compile" )settings(
   commonSettings,
