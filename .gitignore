@@ -22,3 +22,10 @@ mas_models/mas_model_code/mas-model-gen/target/
 mas_models/mas_model_code/mas-sim-conf/target/
 mas_models/mas_model_code/project/project/
 mas_models/mas_model_code/project/target/
+
+mas_vizualization/.idea/
+mas_vizualization/target/
+mas_vizualization/sandbox/target/
+mas_vizualization/project/project/
+mas_vizualization/project/target/
+
